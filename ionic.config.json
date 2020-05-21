@@ -1,0 +1,7 @@
+{
+  "name": "miAcctMob",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
