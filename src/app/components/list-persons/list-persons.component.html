@@ -1,0 +1,29 @@
+
+<div class="panel-body" id="personInfoTable">
+    <table
+        class="table table-striped table-bordered table-hover table-full-width">
+        <thead>
+            <tr>
+                <th>SSN</th>
+                <th>First Name</th>
+                <th>Middle Name</th>
+                <th>Last Name</th>    
+                <th>Gender</th>            
+                <th>Marital Status</th>
+                <th>Date of Birth</th>                
+            </tr>
+        </thead>
+        <tbody>
+
+                <tr *ngFor="let prsnModel of persons">
+                    <td>{{prsnModel.ssNr}}</td>
+                    <td>{{prsnModel.fstNm}}</td>
+                    <td>{{prsnModel.midNm}}</td>
+                    <td>{{prsnModel.lastNm}} </td>
+                    <td>{{prsnModel.sexCd}} </td>
+                    <td>{{prsnModel.mrtlStatCd}} </td>
+                    <td>{{prsnModel.brthDt | date:'dd/MM/yyyy'}}</td>
+                </tr>
+        </tbody>
+    </table>
+</div>
